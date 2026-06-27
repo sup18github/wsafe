@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:gravity="center_vertical"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:orientation="horizontal"
+    android:paddingVertical="16dp">
+
+    <ImageView
+        android:id="@+id/evidenceIcon"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="start|center"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/round_colorful"
+        android:backgroundTint="#2563EB"
+        android:contentDescription="Evidence"
+        android:padding="12dp"
+        android:src="@drawable/ic_mic"
+        app:tint="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|center"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/evidenceType"
+                style="@style/TextAppearance.Material3.LabelSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AUDIO"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_colorful"
+                android:backgroundTint="#2563EB"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="2dp"
+                android:textSize="10sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/evidenceDate"
+                style="@style/TextAppearance.Material3.BodyMedium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start|center"
+                android:layout_marginStart="8dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/evidenceLocation"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="14sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/evidenceDuration"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|center"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/uploadStatus"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="end|center"
+        android:layout_marginEnd="24dp"
+        android:contentDescription="Upload status"
+        android:src="@drawable/ic_cloud_upload"
+        app:tint="@color/text_color_secondary" />
+
+</LinearLayout>

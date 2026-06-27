@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:minHeight="?android:listPreferredItemHeight"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp">
+
+        <View
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="18dp"
+            android:background="@drawable/container"
+            android:backgroundTint="?attr/colorPrimary" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tips"
+            style="@style/TextAppearance.Material3.BodyMedium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start|top"
+            android:layout_marginVertical="4dp"
+            android:layout_marginEnd="24dp"
+            android:layout_weight="1"
+            android:justificationMode="inter_word"
+            android:textColor="@color/text_color_secondary"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/icon_play"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_play_arrow"
+            android:visibility="gone"
+            app:tint="?attr/colorPrimary" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/video_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginHorizontal="24dp"
+            android:layout_marginBottom="16dp" />
+
+    </FrameLayout>
+
+</LinearLayout>
