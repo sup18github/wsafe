@@ -59,19 +59,3 @@ You need to have [Android Studio Giraffe or above](https://developer.android.com
   - Copy the `project_id` of your private key and paste it in [NotificationAPI.java](https://github.com/Mahmud0808/SheGuard/blob/master/app/src/main/java/com/android/sheguard/api/NotificationAPI.java)
 
 - That's it. Now you are good to go!
-
-## Contact 📩
-
-Wanna reach out to me? DM me at 👇
-
-Email: mahmudul15-13791@diu.edu.bd
-
-## Donation 💰
-
-If this project help you reduce time to develop, you can give me a cup of coffee :)
-
-<a href="https://www.buymeacoffee.com/DrDisagree"><img src="https://github.com/Mahmud0808/Iconify/blob/beta/.github/resources/bmc-button.png" width="30%" alt="Buy me a coffee" /></a>
-
-## Credits 🤝
-
-- [icons8.com](https://icons8.com) for the in-app icons.
